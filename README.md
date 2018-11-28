@@ -1,12 +1,12 @@
-# ES6 String CSS 
-> [VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=bashmish.es6-string-css)
+# ES6 String JavaScript 
+> [VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=zjcompt.es6-string-javascript)
 
 Adds syntax highlight support for code, placed in ES6 template literals:
-- CSS
+- JavaScript
 
 ## Installation
 
-- Install `es6-string-css` from extensions (`ctrl + shift + x`)
+- Install `es6-string-javascript` from extensions (`ctrl + shift + x`)
 
 ## Example
 
@@ -14,7 +14,7 @@ Adds syntax highlight support for code, placed in ES6 template literals:
 
 ## Usage
 
-Simply insert `css` or the comment `/*css*/`, `/*inline-css*/` before a template literal.
+Simply insert `javascript` or the comment `/*javascript*/` before a template literal.
 
 > Tip: Comment in the beginning of untagged template literal is required.
 
@@ -24,4 +24,4 @@ Simply insert `css` or the comment `/*css*/`, `/*inline-css*/` before a template
 
 ## Credits
 
-This is a fork of the awesome extension [es6-string-html](https://github.com/mydesireiscoma/es6-string-html/).
+This is a fork of [es6-string-css](https://github.com/bashmish/es6-string-css) which is a fork of the awesome extension [es6-string-html](https://github.com/mydesireiscoma/es6-string-html/).

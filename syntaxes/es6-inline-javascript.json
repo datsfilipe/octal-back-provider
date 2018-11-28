@@ -18,7 +18,7 @@
 	},
 	"patterns": [
 		{
-			"begin": "(.?(css))(`)",
+			"begin": "(.?(javascript))(`)",
 			"end": "(`)",
 			"beginCaptures": {
 				"1": {
@@ -30,12 +30,12 @@
 					"include": "source.ts#template-substitution-element"
 				},
 				{
-					"include": "source.css"
+					"include": "source.js"
 				}
 			]
 		},
 		{
-			"begin": "(\\s?\\/?\\*?\\s?(css|inline-css)\\s?\\*?\\/?\\s?)(`)",
+			"begin": "(\\s?\\/?\\*?\\s?(javascript|inline-javascript)\\s?\\*?\\/?\\s?)(`)",
 			"beginCaptures": {
 				"1": {
 					"name": "comment.block"
@@ -47,12 +47,12 @@
 					"include": "source.ts#template-substitution-element"
 				},
 				{
-					"include": "source.css"
+					"include": "source.js"
 				}
 			]
 		},
 		{
-			"begin": "(?<=\\=|\\:)\\s+(\\/\\/\\s?(css|inline-css)\\s?$)",
+			"begin": "(?<=\\=|\\:)\\s+(\\/\\/\\s?(javascript|inline-javascript)\\s?$)",
 			"beginCaptures": {
 				"1": {
 					"name": "comment.line"
@@ -68,10 +68,10 @@
 					"include": "source.ts#template-substitution-element"
 				},
 				{
-					"include": "source.css"
+					"include": "source.js"
 				}
 			]
 		}
 	],
-	"scopeName": "inline.es6-css"
+	"scopeName": "inline.es6-javascript"
 }

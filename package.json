@@ -1,9 +1,9 @@
 {
-  "name": "es6-string-css",
-  "displayName": "es6-string-css",
-  "description": "Highlight CSS language in ES6 template literals",
-  "version": "0.1.0",
-  "publisher": "bashmish",
+  "name": "es6-string-javascript",
+  "displayName": "es6-string-javascript",
+  "description": "Highlight javascript language in ES6 template literals",
+  "version": "1.0",
+  "publisher": "zjcompt",
   "icon": "docs/logo.png",
   "engines": {
     "vscode": "^1.19.0"
@@ -13,10 +13,10 @@
     "theme": "light"
   },
   "repository": {
-    "url": "https://github.com/bashmish/es6-string-css"
+    "url": "https://github.com/zjcompt/es6-string-javascript"
   },
   "bugs": {
-    "url": "https://github.com/bashmish/es6-string-css/issues"
+    "url": "https://github.com/zjcompt/es6-string-javascript/issues"
   },
   "categories": [
     "Programming Languages"
@@ -24,8 +24,7 @@
   "keywords": [
     "javascript",
     "es6",
-    "css",
-    "lit-css",
+    "lit-javascript",
     "lit-html"
   ],
   "contributes": {
@@ -37,10 +36,10 @@
           "source.jsx",
           "source.tsx"
         ],
-        "scopeName": "inline.es6-css",
-        "path": "./syntaxes/es6-inline-css.json",
+        "scopeName": "inline.es6-javascript",
+        "path": "./syntaxes/es6-inline-javascript.json",
         "embeddedLanguages": {
-          "meta.embedded.block.css": "css"
+          "meta.embedded.block.javascript": "javascript"
         }
       }
     ]

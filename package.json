@@ -3,7 +3,7 @@
   "displayName": "Octal Back-end Provider",
   "description": "Highlight javascript language in ES6 template literals",
   "version": "0.1.0",
-  "publisher": "datsfilipe",
+  "publisher": "dtsf",
   "icon": "docs/octal.png",
   "engines": {
     "vscode": "^1.19.0"

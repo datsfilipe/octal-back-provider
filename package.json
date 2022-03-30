@@ -2,7 +2,7 @@
   "name": "octal-back-provider",
   "displayName": "Octal Back-end Provider",
   "description": "Highlight javascript language in ES6 template literals",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "dtsf",
   "icon": "docs/octal.png",
   "engines": {
@@ -13,10 +13,10 @@
     "theme": "dark"
   },
   "repository": {
-    "url": "https://github.com/zjcompt/es6-string-javascript"
+    "url": "https://github.com/datsfilipe/octal-back-provider"
   },
   "bugs": {
-    "url": "https://github.com/zjcompt/es6-string-javascript/issues"
+    "url": "https://github.com/datsfilipe/octal-back-provider/issues"
   },
   "categories": [
     "Programming Languages"

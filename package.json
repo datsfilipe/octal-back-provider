@@ -1,16 +1,16 @@
 {
-  "name": "es6-string-javascript",
-  "displayName": "es6-string-javascript",
+  "name": "octal-back-provider",
+  "displayName": "Octal Back-end Provider",
   "description": "Highlight javascript language in ES6 template literals",
-  "version": "1.0.1",
-  "publisher": "zjcompt",
-  "icon": "docs/logo.png",
+  "version": "0.1.0",
+  "publisher": "datsfilipe",
+  "icon": "docs/octal.png",
   "engines": {
     "vscode": "^1.19.0"
   },
   "galleryBanner": {
-    "color": "#dedede",
-    "theme": "light"
+    "color": "#363165",
+    "theme": "dark"
   },
   "repository": {
     "url": "https://github.com/zjcompt/es6-string-javascript"
@@ -25,16 +25,15 @@
     "javascript",
     "es6",
     "lit-javascript",
-    "lit-html"
+    "octal",
+    "octal-dev"
   ],
   "contributes": {
     "grammars": [
       {
         "injectTo": [
           "source.js",
-          "source.ts",
-          "source.jsx",
-          "source.tsx"
+          "source.ts"
         ],
         "scopeName": "inline.es6-javascript",
         "path": "./syntaxes/es6-inline-javascript.json",

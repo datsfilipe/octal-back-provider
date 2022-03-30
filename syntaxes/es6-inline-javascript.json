@@ -1,11 +1,9 @@
 {
   "fileTypes": [
     "js",
-    "jsx",
-    "ts",
-    "tsx"
+    "ts"
   ],
-	"injectionSelector": "L:source.js -comment -string, L:source.jsx -comment -string,  L:source.js.jsx -comment -string, L:source.ts -comment -string, L:source.tsx -comment -string",
+	"injectionSelector": "L:source.js -comment -string, L:source.ts -comment -string",
 	"injections": {
 		"L:source": {
 			"patterns": [
@@ -18,11 +16,11 @@
 	},
 	"patterns": [
 		{
-			"begin": "(.?(javascript))(`)",
+			"begin": "onGet:(`)",
 			"end": "(`)",
 			"beginCaptures": {
 				"1": {
-					"name": "variable.parameter"
+					"name": "expression.group"
 				}
 			},
 			"patterns": [
@@ -35,13 +33,13 @@
 			]
 		},
 		{
-			"begin": "(\\s?\\/?\\*?\\s?(javascript|inline-javascript)\\s?\\*?\\/?\\s?)(`)",
+			"begin": "onPost:(`)",
+			"end": "(`)",
 			"beginCaptures": {
 				"1": {
-					"name": "comment.block"
+					"name": "expression.group"
 				}
 			},
-			"end": "(`)",
 			"patterns": [
 				{
 					"include": "source.ts#template-substitution-element"
@@ -52,18 +50,167 @@
 			]
 		},
 		{
-			"begin": "(?<=\\=|\\:)\\s+(\\/\\/\\s?(javascript|inline-javascript)\\s?$)",
+			"begin": "beforeGet:(`)",
+			"end": "(`)",
 			"beginCaptures": {
 				"1": {
-					"name": "comment.line"
+					"name": "expression.group"
 				}
 			},
-			"end": "(`)",
 			"patterns": [
 				{
-					"begin": "(\\G)",
-					"end": "(`)"
+					"include": "source.ts#template-substitution-element"
 				},
+				{
+					"include": "source.js"
+				}
+			]
+		},
+		{
+			"begin": "beforePost:(`)",
+			"end": "(`)",
+			"beginCaptures": {
+				"1": {
+					"name": "expression.group"
+				}
+			},
+			"patterns": [
+				{
+					"include": "source.ts#template-substitution-element"
+				},
+				{
+					"include": "source.js"
+				}
+			]
+		},
+		{
+			"begin": "afterGet:(`)",
+			"end": "(`)",
+			"beginCaptures": {
+				"1": {
+					"name": "expression.group"
+				}
+			},
+			"patterns": [
+				{
+					"include": "source.ts#template-substitution-element"
+				},
+				{
+					"include": "source.js"
+				}
+			]
+		},
+		{
+			"begin": "afterPost:(`)",
+			"end": "(`)",
+			"beginCaptures": {
+				"1": {
+					"name": "expression.group"
+				}
+			},
+			"patterns": [
+				{
+					"include": "source.ts#template-substitution-element"
+				},
+				{
+					"include": "source.js"
+				}
+			]
+		},
+		{
+			"begin": "onGet: (`)",
+			"end": "(`)",
+			"beginCaptures": {
+				"1": {
+					"name": "expression.group"
+				}
+			},
+			"patterns": [
+				{
+					"include": "source.ts#template-substitution-element"
+				},
+				{
+					"include": "source.js"
+				}
+			]
+		},
+		{
+			"begin": "onPost: (`)",
+			"end": "(`)",
+			"beginCaptures": {
+				"1": {
+					"name": "expression.group"
+				}
+			},
+			"patterns": [
+				{
+					"include": "source.ts#template-substitution-element"
+				},
+				{
+					"include": "source.js"
+				}
+			]
+		},
+		{
+			"begin": "beforeGet: (`)",
+			"end": "(`)",
+			"beginCaptures": {
+				"1": {
+					"name": "expression.group"
+				}
+			},
+			"patterns": [
+				{
+					"include": "source.ts#template-substitution-element"
+				},
+				{
+					"include": "source.js"
+				}
+			]
+		},
+		{
+			"begin": "beforePost: (`)",
+			"end": "(`)",
+			"beginCaptures": {
+				"1": {
+					"name": "expression.group"
+				}
+			},
+			"patterns": [
+				{
+					"include": "source.ts#template-substitution-element"
+				},
+				{
+					"include": "source.js"
+				}
+			]
+		},
+		{
+			"begin": "afterGet: (`)",
+			"end": "(`)",
+			"beginCaptures": {
+				"1": {
+					"name": "expression.group"
+				}
+			},
+			"patterns": [
+				{
+					"include": "source.ts#template-substitution-element"
+				},
+				{
+					"include": "source.js"
+				}
+			]
+		},
+		{
+			"begin": "afterPost: (`)",
+			"end": "(`)",
+			"beginCaptures": {
+				"1": {
+					"name": "expression.group"
+				}
+			},
+			"patterns": [
 				{
 					"include": "source.ts#template-substitution-element"
 				},
